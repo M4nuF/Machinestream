@@ -2,10 +2,52 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/gin-contrib/sse"
+  packages = ["."]
+  revision = "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae"
+
+[[projects]]
+  name = "github.com/gin-gonic/gin"
+  packages = [".","binding","render"]
+  revision = "d459835d2b077e44f7c9b453505ee29881d5d12d"
+  version = "v1.2"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/golang/protobuf"
+  packages = ["proto"]
+  revision = "1e59b77b52bf8e4b449a57e6f79f21226d571845"
+
+[[projects]]
   name = "github.com/gorilla/websocket"
   packages = ["."]
   revision = "ea4d1f681babbce9545c9c5f3d5194a789c89f5b"
   version = "v1.2.0"
+
+[[projects]]
+  name = "github.com/mattn/go-isatty"
+  packages = ["."]
+  revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
+  version = "v0.0.3"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/ugorji/go"
+  packages = ["codec"]
+  revision = "84cb69a8af8316eed8cf4a3c9368a56977850062"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/sys"
+  packages = ["unix"]
+  revision = "a13efeb2fd213cf4be7227992aa54519af3b2ac0"
+
+[[projects]]
+  name = "gopkg.in/go-playground/validator.v8"
+  packages = ["."]
+  revision = "5f1438d3fca68893a817e4a66806cea46a9e4ebf"
+  version = "v8.18.2"
 
 [[projects]]
   branch = "v2"
@@ -13,9 +55,15 @@
   packages = [".","bson","internal/json","internal/sasl","internal/scram"]
   revision = "3f83fa5005286a7fe593b055f0d7771a7dce4655"
 
+[[projects]]
+  branch = "v2"
+  name = "gopkg.in/yaml.v2"
+  packages = ["."]
+  revision = "287cf08546ab5e7e37d55a84f7ed3fd1db036de5"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "1f952a928211a66b2986707ed0ca41b4e8d3083762a41563b59762d2e1b51d51"
+  inputs-digest = "85fbbf28d94efe874a8170eb9fe3d82df6e48b098b302841e7257ece93d2012b"
   solver-name = "gps-cdcl"
   solver-version = 1

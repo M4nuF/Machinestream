@@ -1,12 +1,25 @@
 version: '2'
 services:
     engine:
-        build: .
+        build:
+          dockerfile: "streamengine/Dockerfile"
+          context: .
         container_name: "streamengine"
         links:
             - mongodb
         depends_on:
             - mongodb
+    api:
+        build:
+          dockerfile: "streamapi/Dockerfile"
+          context: .
+        container_name: "streamapi"
+        links:
+            - mongodb
+        depends_on:
+            - mongodb
+        ports:
+          - 8080:8080
     mongodb:
         image: mongo:latest
         container_name: "mongodb"
